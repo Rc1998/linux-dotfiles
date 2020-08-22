@@ -1,0 +1,216 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+
+window:
+  dimensions:
+    columns: 100
+    lines: 35 
+#  position:
+#    x: 75
+#    y: 75
+  padding:
+    x: 5
+    y: 5
+  dynamic_padding: true
+  decorations: full
+  startup_mode: Windowed
+  title: Alacritty
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+# Font configuration
+font:
+  normal:
+    family: SF Mono
+    style: Regular
+
+  bold:
+    family: SF Mono
+    style: Bold
+
+  italic:
+    family: SF Mono
+    style: Italic
+
+  bold_italic:
+    family: SF Mono
+    style: Bold Italic
+
+  # Point size
+  size: 12
+
+  # Offset is the extra space around each character. `offset.y` can be thought of
+  # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
+  offset:
+    x: 0
+    y: 5
+
+  # Glyph offset determines the locations of the glyphs within their cells with
+  # the default being at the bottom. Increasing `x` moves the glyph to the right,
+  # increasing `y` moves the glyph upwards.
+  glyph_offset:
+    x: 0
+    y: 0
+
+ 
+  use_thin_strokes: false
+
+# If `true`, bold text is drawn using the bright color variants.
+draw_bold_text_with_bright_colors: false
+
+## Colors Snazzy
+# Colors (Snazzy)
+colors:
+  primary:
+    background: '0x222326'
+    foreground: '0xeff0eb'
+  normal:
+    black:   '0x282a36'
+    red:     '0xff5c57'
+    green:   '0x5af78e'
+    yellow:  '0xf3f99d'
+    blue:    '0x57c7ff'
+    magenta: '0xff6ac1'
+    cyan:    '0x9aedfe'
+    white:   '0xf1f1f0'
+  bright:
+    black:   '0x686868'
+    red:     '0xff5c57'
+    green:   '0x5af78e'
+    yellow:  '0xf3f99d'
+    blue:    '0x57c7ff'
+    magenta: '0xff6ac1'
+    cyan:    '0x9aedfe'
+    white:   '0xf1f1f0'
+
+
+# Nord Alacritty
+# Version:    0.1.0
+# Repository: https://github.com/arcticicestudio/nord-alacritty
+#colors:
+#  primary:
+#    background: '0x2E3440'
+#    foreground: '0xD8DEE9'
+#  cursor:
+#    text: '0x2E3440'
+#    cursor: '0xD8DEE9'
+#  normal:
+#    black: '0x3B4252'
+#    red: '0xBF616A'
+#    green: '0xA3BE8C'
+#    yellow: '0xEBCB8B'
+#    blue: '0x81A1C1'
+#    magenta: '0xB48EAD'
+#    cyan: '0x88C0D0'
+#    white: '0xE5E9F0'
+#  bright:
+#    black: '0x4C566A'
+#    red: '0xBF616A'
+#    green: '0xA3BE8C'
+#    yellow: '0xEBCB8B'
+#    blue: '0x81A1C1'
+#    magenta: '0xB48EAD'
+#    cyan: '0x8FBCBB'
+#    white: '0xECEFF4'
+
+
+
+  # Indexed Colors
+  #
+  # The indexed colors include all colors from 16 to 256.
+  # When these are not set, they're filled with sensible defaults.
+  #
+  # Example:
+  #   `- { index: 16, color: '' }`
+  #
+  indexed_colors: []
+
+# Background opacity
+#
+# Window opacity as a floating point number from `0.0` to `1.0`.
+# The value `0.0` is completely transparent and `1.0` is opaque.
+background_opacity: 0.90
+
+#selection:
+#semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+
+# When set to `true`, selected text will be copied to the primary clipboard.
+save_to_clipboard: true
+
+# Allow terminal applications to change Alacritty's window title.
+window.dynamic_title: true
+
+cursor:
+  # Cursor style
+  #
+  # Values for `style`:
+  #   - ▇ Block
+  #   - _ Underline
+  #   - | Beam
+  style: Underline
+
+  # If this is `true`, the cursor will be rendered as a hollow box when the
+  # window is not focused.
+  unfocused_hollow: true
+
+  # Live config reload (changes require restart)
+  live_config_reload: true
+
+# Shell
+#
+# You can set `shell.program` to the path of your favorite shell, e.g. `/bin/fish`.
+# Entries in `shell.args` are passed unmodified as arguments to the shell.
+#
+# Default:
+#   - (macOS) /bin/bash --login
+#   - (Linux/BSD) user login shell
+#   - (Windows) powershell
+shell:
+  program: /usr/bin/zsh
+  args:
+    - --login
+
+# Startup directory
+#
+# Directory the shell is started in. If this is unset, or `None`, the working
+# directory of the parent process will be used.
+working_directory: /home/rc/
+
+
+mouse:
+  # Click settings
+  #
+  # The `double_click` and `triple_click` settings control the time
+  # alacritty should wait for accepting multiple clicks as one double
+  # or triple click.
+  #double_click: { threshold: 300 }
+  #triple_click: { threshold: 300 }
+
+  # If this is `true`, the cursor is temporarily hidden when typing.
+  hide_when_typing: false
+
+url:
+  # URL launcher
+  #
+  # This program is executed when clicking on a text which is recognized as a URL.
+  # The URL is always added to the command as the last parameter.
+  #
+  # When set to `None`, URL launching will be disabled completely.
+  #
+  # Default:
+  #   - (macOS) open
+  #   - (Linux/BSD) xdg-open
+  #   - (Windows) explorer
+  launcher:
+    program: xdg-opem
+    args: []
+# URL modifiers
+#
+# These are the modifiers that need to be held down for opening URLs when clicking
+# on them. The available modifiers are documented in the key binding section.
+#modifiers: None
+
+key_bindings:
+  - { key: V,        mods: Control,    action: Paste               }
+  - { key: C,        mods: Control,    action: Copy                }

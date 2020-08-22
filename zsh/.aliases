@@ -1,0 +1,57 @@
+# ALIASES
+############################### navigation ###############################
+alias reload='zsh'
+alias cd1='cd ../'
+alias cd2='cd ../../'
+alias cd3='cd ../../../'
+alias lsa='ls -A -G --color=auto --group-directories-first'
+alias cdot='cd $HOME/.arch-dotfiles'         # take me to my dotfiles
+alias cdg='cd /home/rc/gdrive/'
+alias cdconf='cd $HOME/.config'
+									
+alias zrc='micro ~/.arch-dotfiles/zsh/.zshrc'     # open .bashrc in VS Code
+alias cpwd='pwd|tr -d "\n"|pbcopy'      # copy the working directory path
+alias cp='cp -i'                        # saftey first
+alias mv='mv -i'                        # saftey first
+alias rm='rm -i'                        # saftey first
+
+############################### package management ########################
+alias ps='sudo pacman -Ss'
+alias pi='sudo pacman -S'
+alias pu='sudo pacman -Syu'
+alias prm='sudo pacman -Rs'
+alias ys='yay -Ss'
+alias yi='yay -S'
+alias yu='yay -Syu'
+alias yrm='yay -Rs'
+alias update='yay -Syu'
+
+############################### youtube-dl ###############################
+alias yta-aac="youtube-dl --extract-audio --audio-format aac "
+alias yta-best="youtube-dl --extract-audio --audio-format best "
+alias yta-flac="youtube-dl --extract-audio --audio-format flac "
+alias yta-m4a="youtube-dl --extract-audio --audio-format m4a "
+alias yta-mp3="youtube-dl --extract-audio --audio-format mp3 "
+alias yta-opus="youtube-dl --extract-audio --audio-format opus "
+alias yta-vorbis="youtube-dl --extract-audio --audio-format vorbis "
+alias yta-wav="youtube-dl --extract-audio --audio-format wav "
+alias ytv-best="youtube-dl -f bestvideo+bestaudio "
+
+############################### git ######################################
+alias addup='git add -u'
+alias addall='git add -A'
+alias branch='git branch'
+alias checkout='git checkout'
+alias commit='git commit -m'
+alias fetch='git fetch'
+alias pull='git pull origin'
+alias push='git push origin'
+alias gst='git status'
+alias tag='git tag'
+alias newtag='git tag -a'
+
+############################### python ###################################
+#alias activate="pyenv activate"
+#alias deactivate="pyenv deactivate"
+#alias mkenv="pyenv virtualenv"
+#alias lsenv="pyenv virtualenvs"
