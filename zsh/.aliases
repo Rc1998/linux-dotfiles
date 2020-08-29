@@ -26,6 +26,9 @@ alias yu='yay -Syu'
 alias yrm='yay -Rs'
 alias update='yay -Syu'
 
+############################## backup via timemachine ####################
+alias backup='sudo timemachine /home/rc /backup'
+
 ############################### youtube-dl ###############################
 alias yta-aac="youtube-dl --extract-audio --audio-format aac "
 alias yta-best="youtube-dl --extract-audio --audio-format best "
@@ -49,6 +52,7 @@ alias push='git push origin'
 alias gst='git status'
 alias tag='git tag'
 alias newtag='git tag -a'
+alias clone='git clone'
 
 ############################### python ###################################
 #alias activate="pyenv activate"
