@@ -5,9 +5,12 @@ alias cd1='cd ../'
 alias cd2='cd ../../'
 alias cd3='cd ../../../'
 alias lsa='ls -A -G --color=auto --group-directories-first'
-alias cdot='cd $HOME/.arch-dotfiles'         # take me to my dotfiles
+alias cdot='cd home/rc/.arch-dotfiles'         # take me to my dotfiles
 alias cdg='cd /home/rc/gdrive/'
-alias cdconf='cd $HOME/.config'
+alias cdconf='cd /home/rc/.config'
+alias cdd='/run/media/rc/'
+alias cdp='/run/media/rc/Pequod/'
+alias cdz='cd /home/rc/.arch-dotfiles/zsh/'
 									
 alias zrc='micro ~/.arch-dotfiles/zsh/.zshrc'     # open .bashrc in VS Code
 alias cpwd='pwd|tr -d "\n"|pbcopy'      # copy the working directory path
