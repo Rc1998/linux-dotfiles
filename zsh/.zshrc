@@ -1,10 +1,11 @@
-# pfetch
 
 export DOTFILES="/home/rc/.arch-dotfiles/zsh"
 # export PATH="/usr/local/sbin:$PATH"
 export PATH="/home/rc/bin/:$PATH"
 export PATH="/home/rc/.emacs.d/bin/:$PATH"
 # export EDITOR="/usr/local/bin/micro"
+
+quotes
 
 # Rust Installation
 # source $HOME/.cargo/bin
