@@ -5,15 +5,12 @@ alias cd1='cd ../'
 alias cd2='cd ../../'
 alias cd3='cd ../../../'
 alias lsa='ls -A -G --color=auto --group-directories-first'
-alias cdot='cd /home/rc/.arch-dotfiles'         # take me to my dotfiles
+alias cdot='cd /home/rc/.dotfiles'         # take me to my dotfiles
 alias cdg='cd /home/rc/gdrive/'
 alias cdconf='cd /home/rc/.config'
 alias cdd='/run/media/rc/'
 alias cdp='/run/media/rc/Pequod/'
-alias cdz='cd /home/rc/.arch-dotfiles/zsh/'
-									
-alias zrc='micro ~/.arch-dotfiles/zsh/.zshrc'     # open .bashrc in VS Code
-alias cpwd='pwd|tr -d "\n"|pbcopy'      # copy the working directory path
+
 alias cp='cp -i'                        # saftey first
 alias mv='mv -i'                        # saftey first
 alias rm='rm -i'                        # saftey first
@@ -27,10 +24,6 @@ alias ys='yay -Ss'
 alias yi='yay -S'
 alias yu='yay -Syu'
 alias yrm='yay -Rs'
-alias update='yay -Syu'
-
-############################## backup via timemachine ####################
-alias backup='sudo timemachine /home/rc /backup'
 
 ############################### youtube-dl ###############################
 alias yta-aac="youtube-dl --extract-audio --audio-format aac "

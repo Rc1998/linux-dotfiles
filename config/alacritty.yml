@@ -63,7 +63,7 @@ draw_bold_text_with_bright_colors: false
 # Colors (Snazzy)
 colors:
   primary:
-    background: '0x000000'
+    background: '0x2d2d2d'
     foreground: '0xFFFFFF'
     #background: '0x222326'
     #foreground: '0xeff0eb'

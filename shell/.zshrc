@@ -1,5 +1,5 @@
 
-export DOTFILES="/home/rc/.arch-dotfiles/zsh"
+export DOTFILES="/home/rc/.dotfiles/shell"
 # export PATH="/usr/local/sbin:$PATH"
 export PATH="/home/rc/bin/:$PATH"
 export PATH="/home/rc/.emacs.d/bin/:$PATH"
@@ -14,8 +14,6 @@ quotes
 # eval "$(pyenv init -)"
 # eval "$(pyenv virtualenv-init -)"
 
-# Haskell
-# source /Users/ryancampbell/.ghcup/env
 
 ######### antigen installation #########
 source $HOME/antigen.zsh
