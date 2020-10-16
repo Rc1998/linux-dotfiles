@@ -51,7 +51,7 @@ alias newtag='git tag -a'
 alias clone='git clone'
 
 ############################### python ###################################
-#alias activate="pyenv activate"
-#alias deactivate="pyenv deactivate"
-#alias mkenv="pyenv virtualenv"
-#alias lsenv="pyenv virtualenvs"
+alias activate="pyenv activate"
+alias deactivate="pyenv deactivate"
+alias mkenv="pyenv virtualenv"
+alias lsenv="pyenv virtualenvs"

@@ -2,17 +2,14 @@
 export DOTFILES="/home/rc/.dotfiles/shell"
 # export PATH="/usr/local/sbin:$PATH"
 export PATH="/home/rc/bin/:$PATH"
-export PATH="/home/rc/.emacs.d/bin/:$PATH"
-# export EDITOR="/usr/local/bin/micro"
+export PATH="/home/rc/.cargo/bin:$PATH"
 
 quotes
 
-# Rust Installation
-# source $HOME/.cargo/bin
 
 # pyenv virtualenv for python management
-# eval "$(pyenv init -)"
-# eval "$(pyenv virtualenv-init -)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 
 ######### antigen installation #########
