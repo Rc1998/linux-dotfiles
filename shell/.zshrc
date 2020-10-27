@@ -1,6 +1,5 @@
-
+# Ryan's zshrc file
 export DOTFILES="/home/rc/.dotfiles/shell"
-# export PATH="/usr/local/sbin:$PATH"
 export PATH="/home/rc/bin/:$PATH"
 export PATH="/home/rc/.cargo/bin:$PATH"
 
@@ -11,11 +10,10 @@ quotes
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-
 ######### antigen installation #########
 source $HOME/antigen.zsh
 
-######### Load the oh-my-zsh's library. #########
+######### load the oh-my-zsh's library. #########
 antigen use oh-my-zsh
 
 ######### plugins #########
@@ -24,14 +22,12 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 
-######### for prompt customization #########
-### powerlevel10k prompt ###
+######### prompt customization #########
 antigen theme romkatv/powerlevel10k
 
 antigen apply # apply antigen stuff
 
-source $DOTFILES/.purepower # loading the config for p10k after antifen apply fixed the reloading issue
-
 ######### sourcing my aliases and functions #########
+source $DOTFILES/.purepower # loading the config for p10k after antien apply fixed the reloading issue
 source $DOTFILES/.aliases
 source $DOTFILES/.functions
