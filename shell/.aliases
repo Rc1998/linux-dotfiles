@@ -18,14 +18,11 @@ alias rm='rm -i'                        # saftey first
 alias micro='nvim'
 
 ############################### package management ########################
-alias ps='sudo pacman -Ss'
-alias pi='sudo pacman -S'
-alias pu='sudo pacman -Syu'
-alias prm='sudo pacman -Rs'
+alias ysg='yay -Ss | grep'
 alias ys='yay -Ss'
 alias yi='yay -S'
 alias yu='yay -Syu'
-alias yrm='yay -Rs'
+alias yrm='yay -Runs'
 
 ############################### youtube-dl ###############################
 alias yta-aac="youtube-dl --extract-audio --audio-format aac "
